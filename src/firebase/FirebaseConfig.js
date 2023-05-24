@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import {
     getAuth,
-    signInWithPopup,
+    // signInWithPopup,
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
     sendPasswordResetEmail,
@@ -10,10 +10,10 @@ import {
 } from "firebase/auth";
 import {
     getFirestore,
-    query,
-    getDocs,
+    // query,
+    // getDocs,
     collection,
-    where,
+    // where,
     addDoc,
 } from "firebase/firestore";
 const firebaseConfig = {

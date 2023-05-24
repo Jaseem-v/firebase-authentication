@@ -7,7 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 export default function Login({ setUserData }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, loading, error] = useAuthState(auth);
+  // const [user, loading, error] = useAuthState(auth);
 
   const [verified, setverified] = useState(false)
   const navigate = useNavigate();
