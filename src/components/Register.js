@@ -24,14 +24,14 @@ export default function Register({ setUserData }) {
     if (!name) alert("Please enter name");
     await registerWithEmailAndPassword(name, email, password);
     logout();
+    navigate("/sign-in");
     alert("user created successfully")
-
   };
   useEffect(() => {
     if (loading) return;
-    if (user) {
-      navigate("/dashboard");
-    }
+    // if (user) {
+    //   navigate("/dashboard");
+    // }
   }, [user, loading]);
 
   return (
